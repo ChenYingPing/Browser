@@ -14,6 +14,10 @@
 		740524501D1150A2004B1627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7405244E1D1150A2004B1627 /* LaunchScreen.storyboard */; };
 		7405245B1D1150A2004B1627 /* BrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7405245A1D1150A2004B1627 /* BrowserTests.swift */; };
 		740524661D1150A2004B1627 /* BrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740524651D1150A2004B1627 /* BrowserUITests.swift */; };
+		7462D7AC1D124B8700402917 /* hideSection.js in Resources */ = {isa = PBXBuildFile; fileRef = 7462D7AB1D124B8700402917 /* hideSection.js */; };
+		7462D7AE1D124FCF00402917 /* getPost.js in Resources */ = {isa = PBXBuildFile; fileRef = 7462D7AD1D124FCF00402917 /* getPost.js */; };
+		7462D7B01D12527600402917 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462D7AF1D12527600402917 /* Post.swift */; };
+		7462D7B21D12547700402917 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462D7B11D12547700402917 /* PostsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		740524611D1150A2004B1627 /* BrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		740524651D1150A2004B1627 /* BrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserUITests.swift; sourceTree = "<group>"; };
 		740524671D1150A2004B1627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7462D7AB1D124B8700402917 /* hideSection.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hideSection.js; sourceTree = "<group>"; };
+		7462D7AD1D124FCF00402917 /* getPost.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = getPost.js; sourceTree = "<group>"; };
+		7462D7AF1D12527600402917 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7462D7B11D12547700402917 /* PostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			children = (
 				740524451D1150A1004B1627 /* AppDelegate.swift */,
 				740524471D1150A1004B1627 /* ViewController.swift */,
+				7462D7AF1D12527600402917 /* Post.swift */,
+				7462D7B11D12547700402917 /* PostsTableViewController.swift */,
+				7462D7AD1D124FCF00402917 /* getPost.js */,
+				7462D7AB1D124B8700402917 /* hideSection.js */,
 				740524491D1150A2004B1627 /* Main.storyboard */,
 				7405244C1D1150A2004B1627 /* Assets.xcassets */,
 				7405244E1D1150A2004B1627 /* LaunchScreen.storyboard */,
@@ -229,7 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7462D7AC1D124B8700402917 /* hideSection.js in Resources */,
 				740524501D1150A2004B1627 /* LaunchScreen.storyboard in Resources */,
+				7462D7AE1D124FCF00402917 /* getPost.js in Resources */,
 				7405244D1D1150A2004B1627 /* Assets.xcassets in Resources */,
 				7405244B1D1150A2004B1627 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7462D7B01D12527600402917 /* Post.swift in Sources */,
+				7462D7B21D12547700402917 /* PostsTableViewController.swift in Sources */,
 				740524481D1150A1004B1627 /* ViewController.swift in Sources */,
 				740524461D1150A1004B1627 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +498,7 @@
 				7405246C1D1150A2004B1627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7405246D1D1150A2004B1627 /* Build configuration list for PBXNativeTarget "BrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				7405246F1D1150A2004B1627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		740524701D1150A2004B1627 /* Build configuration list for PBXNativeTarget "BrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				740524721D1150A2004B1627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
