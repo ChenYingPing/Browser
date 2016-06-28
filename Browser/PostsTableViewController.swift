@@ -15,6 +15,7 @@ class PostsTableViewController: UITableViewController {
     @IBAction func cancel(sender: AnyObject) {
          dismissViewControllerAnimated(true, completion: nil)
     }
+    
     override init(style: UITableViewStyle) {
         super.init(style: style)
     }

@@ -79,6 +79,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.postSelected(_:)), name: PostSelected, object: nil)
     }
+    
     func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
         if (message.name == MessageHandler) {
             if let postsList = message.body as? [Dictionary<String, String>] {
@@ -90,6 +91,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
             }
         }
     }
+    
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if (keyPath == "loading") {
             backButton.enabled = webView.canGoBack
@@ -127,6 +129,7 @@ class ViewController: UIViewController, UITextFieldDelegate, WKNavigationDelegat
             decisionHandler(WKNavigationActionPolicy.Allow)
         }
     }
+    
 //    <div id=​"u_sp" class=​"s-isindex-wrap s-sp-menu">​
     func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .Alert)
